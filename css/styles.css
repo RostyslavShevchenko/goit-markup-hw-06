@@ -30,11 +30,12 @@ img {
 }
 
 .container {
+    padding: 0 16px;
     margin: 0 auto;
 }
 
 section {
-   
+   padding: 96px 0;
 }
 
 /* header */
@@ -65,7 +66,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     font-size: 18px;
     font-weight: 700;
     line-height: 117%;
-    letter-spacing: 0.54px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
 }
@@ -137,10 +138,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 .contacts-link {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0.32px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -164,14 +165,15 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 .mobile-menu-wrap {
-    position: absolute;
-    width: 320px;
+    position: fixed;
+    width: 100%;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 640px;
-    padding: 24px 24px 16px 16px;
+    left: 0%;
+    height: 100%;
+    padding: 72px 24px 16px 16px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-close-btn {
@@ -193,7 +195,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 .mob-menu {
-    margin-top: 48px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -217,7 +218,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 .mob-contacts {
-    margin-top: 168px;
+    margin-top: auto;
     margin-bottom: 48px;
     display: flex;
     flex-direction: column;
@@ -262,10 +263,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 /* main */
 
 .main-hero {
-    
-}
-
-.main-hero .container {
+    padding: 0;
     background-color: #2E2F42B2;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/office-mob.jpg);
     background-repeat: no-repeat;
@@ -273,7 +271,12 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     background-size: cover;
     margin: 0 auto;
     max-width: 320px;
-    padding: 72px 16px;
+}
+
+.main-hero .container { 
+    max-width: 320px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,8 +346,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .advantages .container{
     max-width: 320px;
-    padding: 96px 16px;
-    margin: 0 auto;
 }
 
 .icon-container {
@@ -411,7 +412,8 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .our-team .container{
     max-width: 320px;
-    padding: 96px 16px;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 .team-roster {
@@ -427,7 +429,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     background-color: #fff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    width: 100%;
+    width: 264px;
 }
 
 .cards-image {
@@ -496,7 +498,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .portfolio .container{
     max-width: 320px;
-    padding: 96px 16px;
 }
 
 .portfolio-roster {
@@ -570,11 +571,12 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .footer {
     background-color: #2E2F42;
+    padding: 96px 0;
+    margin: 0 auto;
 }
 
 .footer .container {
     max-width: 320px;
-    padding: 96px 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -971,7 +973,9 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     .header .container {
         max-width: 768px;
         justify-content: space-between;
-        padding: 0 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+
     }
 
     .menu-btn {
@@ -1001,11 +1005,12 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     
     /* !!!!!!!!!!!!!!!!MAIN */
     .main-hero{
-        min-width: 768px;
+        max-width: 1440px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/office-tab.jpg);
     }
     
     .main-hero .container {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/office-tab.jpg);
+        /* background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/office-tab.jpg); */
         max-width: 768px;
         padding: 112px 0;
         gap: 36px;
@@ -1037,7 +1042,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
     .advantages .container {
         max-width: 768px;
-        padding: 96px 16px;
     }
 
     .advantages-roster {
@@ -1064,13 +1068,12 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
     /* !!!!!!!!!!!!!!!!OUR-TEAM */
     
-    .our-team{
-        
+    .our-team {
     }
 
     .our-team .container{
         max-width: 768px;
-        padding: 96px 0;
+        padding: 0 16px;
     }
 
     .team-roster{
@@ -1093,8 +1096,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
     .portfolio .container{
         max-width: 768px;
-        padding: 96px 16px;
-
     }
 
     .portfolio-roster{
@@ -1113,12 +1114,11 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     /* !!!!!!!!!FOOTER */
 
     .footer {
-        
+        padding: 96px 0;
     }
 
     .footer .container {
         max-width: 768px;
-        padding: 96px 0;
         flex-direction: row;
         justify-content: start;
         align-items: baseline;
@@ -1140,6 +1140,14 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         align-self: flex-start;
     }
 
+    .media-header {
+        align-self: flex-start;
+    }
+
+    .footer-logo {
+        align-self: flex-start;
+    }
+
     /* !!!!!!!!!BACKDROP*/
 
     .modal {
@@ -1155,13 +1163,16 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 @media screen and (min-width: 1158px){
     /* !!!!!!!!!!!!!!!!HEADER */
+
+    section {
+        padding: 120px 0;
+    }
     .header {
         max-width: 1440px;
     }
 
     .header .container {
         max-width: 1158px;
-        padding: 0 15px;
     }
 
     .logo {
@@ -1173,17 +1184,24 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         flex-direction: row;
         gap: 40px;
     }
+
+    .contacts-link {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+    }
     
     /* !!!!!!!!!!!!!!!!MAIN */
     .main-hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/office.jpg);
         max-width: 1440px;
+        padding: 188px 0;
     }
 
     .main-hero .container {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/office.jpg);
         max-width: 1158px;
-        padding: 188px 0;
         gap: 48px;
+        padding: 0;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -1198,12 +1216,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
     .advantages {
         max-width: 1440px;
-        
     }
 
     .advantages .container {
         max-width: 1158px;
-        padding: 120px 16px;
     }
 
     .icon-container {
@@ -1241,11 +1257,11 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
     .our-team {
         max-width: 1440px;
+        
     }
 
     .our-team .container {
         max-width: 1158px;
-        padding: 120px 16px;
     }
 
     .team-roster {
@@ -1269,7 +1285,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
    .portfolio .container {
        max-width: 1158px;
-       padding: 120px 16px;
    }
 
    .portfolio-roster {
@@ -1288,40 +1303,24 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
     .footer {
         max-width: 1440px;
-        padding: 0;
+        padding: 100px 0;
     }
 
     .footer .container {
-        padding: 100px 15px;
+        padding-left: 16px;
+        padding-right: 16px;
         max-width: 1158px;
         flex-direction: row;
-        justify-content: start;
+        justify-content: space-between;
         align-items: baseline;
         align-content: center;  
         gap: 0;
     }
 
     .logo-container {
-        margin-right: 120px;
+        margin-right: auto;
     }
 
-    .footer-media{
-        margin-right: 80px;
+    .footer-media {
+        margin-right: auto;
     }
-
-    .footer-logo {
-        align-self: flex-start;
-    }
-
-    .media-header {
-        align-self: flex-start;
-    }
-
-    .block-title {
-        align-self: flex-start;
-    }
-
-    .subscribe-input {
-        /* max-width: 264px; */
-    }
-}

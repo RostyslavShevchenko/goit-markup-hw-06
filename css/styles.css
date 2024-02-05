@@ -340,7 +340,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 .advantages {
-    margin: 0 auto;
 }
 
 .advantages .container{
@@ -406,7 +405,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .our-team {
     background-color: #F4F4FD;
-    margin: 0 auto;
 }
 
 .our-team .container{
@@ -492,7 +490,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 /* portfolio section */
 
 .portfolio{
-    margin: 0 auto;
 }
 
 .portfolio .container{
@@ -571,7 +568,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .footer {
     background-color: #2E2F42;
     padding: 96px 0;
-    margin: 0 auto;
 }
 
 .footer .container {
@@ -1035,7 +1031,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
         /* !!!!!!!!!!!!!!!!ADVANTAGES */
     .advantages {
-        min-width: 768px;
     }
 
     .advantages .container {
@@ -1166,7 +1161,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         padding: 120px 0;
     }
     .header {
-        max-width: 1440px;
     }
 
     .header .container {
@@ -1213,7 +1207,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     /* !!!!!!!!!!ADVANTAGES */
 
     .advantages {
-        max-width: 1440px;
     }
 
     .advantages .container {
@@ -1253,9 +1246,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
         
 
-    .our-team {
-        max-width: 1440px;
-        
+    .our-team {       
     }
 
     .our-team .container {
@@ -1300,7 +1291,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     /* !!!!!!!!!FOOTER */
 
     .footer {
-        max-width: 1440px;
         padding: 100px 0;
     }
 
